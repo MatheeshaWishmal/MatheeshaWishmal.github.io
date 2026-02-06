@@ -9,249 +9,243 @@
 </head>
 <body>
 
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
     <nav class="navbar">
-        <div class="logo">MWL.</div>
+        <div class="logo">MWL<span class="dot">.</span></div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact" class="btn-contact">Contact Me</a></li>
+            <li><a href="#certifications">Certs</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact" class="btn-contact">Contact</a></li>
         </ul>
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
     </nav>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <span class="greeting">Hello, I'm</span>
-            <h1>Matheesha Wishmal Liyanage</h1>
-            <h2>BSc Computing Systems Student</h2>
-            <p>Dean's List Recipient | Specializing in Cloud Native Dev & AI Systems</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn primary">View My Work</a>
-                <a href="cv.pdf" target="_blank" class="btn secondary">Download CV</a>
+            <span class="badge-pill fade-in-up">Welcome to my portfolio</span>
+            <h1 class="typing-text">Matheesha Wishmal</h1>
+            <h2 class="fade-in-up delay-1">BSc Computing Systems | Cloud & AI</h2>
+            <p class="fade-in-up delay-2">Dean's List Recipient specializing in <span class="highlight">Cloud Native Dev</span>, <span class="highlight">AI Systems</span>, and <span class="highlight">Full-Stack Engineering</span>.</p>
+            
+            <div class="hero-buttons fade-in-up delay-3">
+                <a href="#projects" class="btn primary glow-effect">View My Work <i class="fas fa-arrow-right"></i></a>
+                <a href="cv.pdf" target="_blank" class="btn secondary">Download CV <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+        
+        <div class="hero-visual fade-in-right">
+            <div class="floating-card">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="floating-card small" style="top: -20px; right: -20px;">
+                <i class="fas fa-cloud"></i>
+            </div>
+            <div class="floating-card small" style="bottom: -20px; left: -20px;">
+                <i class="fas fa-shield-alt"></i>
             </div>
         </div>
     </section>
 
     <section id="about" class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content hidden">
-            <div class="about-text">
-                <p>
-                    I am a high-achieving <strong>BSc Computing Systems undergraduate</strong> at Ulster University (Dean’s List Recipient) based in London. 
-                    Now in my final year, I am transitioning from core software principles to advanced <strong>Cloud Native Development</strong> and <strong>Artificial Intelligence</strong>.
-                </p>
-                <p>
-                    I combine this technical depth with real-world resilience gained from working in high-pressure retail environments. I am currently seeking a Summer 2026 Internship to apply my skills in <strong>Full-Stack Strategies</strong> and <strong>Secure Systems</strong>.
-                </p>
-                
-                <div class="languages-block" style="margin-top: 20px;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 10px; color: #1e293b;">Languages</h3>
-                    <ul style="list-style: none; display: flex; gap: 20px;">
-                        <li><i class="fas fa-globe" style="color: #2563eb; margin-right: 8px;"></i> English (Professional Proficiency)</li>
-                        <li><i class="fas fa-globe" style="color: #2563eb; margin-right: 8px;"></i> Sinhala (Native)</li>
-                    </ul>
+        <h2 class="section-title scroll-reveal">About Me</h2>
+        <div class="glass-panel scroll-reveal">
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am a high-achieving <strong>BSc Computing Systems undergraduate</strong> at Ulster University (Dean’s List Recipient) based in London. 
+                        Now in my final year, I am transitioning from core software principles to advanced <strong>Cloud Native Development</strong> and <strong>Artificial Intelligence</strong>.
+                    </p>
+                    <p>
+                        I combine this technical depth with real-world resilience gained from working in high-pressure retail environments. I am currently seeking a Summer 2026 Internship.
+                    </p>
+                    
+                    <div class="languages-row">
+                        <div class="lang-pill"><i class="fas fa-globe"></i> English (Professional)</div>
+                        <div class="lang-pill"><i class="fas fa-comment"></i> Sinhala (Native)</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="education" class="bg-light">
-        <div class="container">
-            <h2 class="section-title">Education & Coursework</h2>
-            <div class="education-grid">
-                
-                <div class="edu-card hidden">
-                    <div class="edu-header">
-                        <h3>Year 3: Cloud & AI (Final Year)</h3>
-                        <span class="badge">Current</span>
+    <section id="education" class="container">
+        <h2 class="section-title scroll-reveal">Education Path</h2>
+        <div class="timeline">
+            
+            <div class="timeline-item scroll-reveal left">
+                <div class="timeline-content glass-card">
+                    <div class="card-header">
+                        <div class="icon-box gradient-1"><i class="fas fa-graduation-cap"></i></div>
+                        <div>
+                            <h3>Year 3: Final Year</h3>
+                            <span class="status-badge pulse">Current</span>
+                        </div>
                     </div>
-                    <ul class="module-list">
-                        <li><i class="fas fa-layer-group"></i> Full-Stack Strategies & Dev</li>
-                        <li><i class="fas fa-cloud"></i> Cloud Native Development</li>
-                        <li><i class="fas fa-project-diagram"></i> Computing Systems Project (40 Credits)</li>
-                        <li><i class="fas fa-robot"></i> Computer Vision and AI</li>
-                        <li><i class="fas fa-microchip"></i> Edge & Embedded Systems Intelligence</li>
-                        <li><i class="fas fa-balance-scale"></i> Social & Ethical Computing</li>
+                    <ul class="styled-list">
+                        <li>Cloud Native Development</li>
+                        <li>Full-Stack Strategies</li>
+                        <li>Computer Vision & AI</li>
+                        <li>Edge & Embedded Systems</li>
                     </ul>
                 </div>
-
-                <div class="edu-card hidden">
-                    <div class="edu-header">
-                        <h3>Year 2: Specialization</h3>
-                        <span class="badge completed">Completed</span>
-                    </div>
-                    <ul class="module-list">
-                        <li><i class="fas fa-shield-alt"></i> Systems Security</li>
-                        <li><i class="fas fa-server"></i> Server Side Development</li>
-                        <li><i class="fas fa-chart-line"></i> Data Analytics</li>
-                        <li><i class="fas fa-network-wired"></i> Computer Networking</li>
-                        <li><i class="fas fa-tasks"></i> Software Product & Process Management</li>
-                        <li><i class="fas fa-laptop-code"></i> Programming in Practice</li>
-                    </ul>
-                </div>
-
-                <div class="edu-card hidden">
-                    <div class="edu-header">
-                        <h3>Year 1: Foundation</h3>
-                        <span class="badge completed">Completed</span>
-                    </div>
-                    <ul class="module-list">
-                        <li><i class="fas fa-database"></i> Introduction to Databases</li>
-                        <li><i class="fas fa-code"></i> Client Side Development</li>
-                        <li><i class="fas fa-microchip"></i> Intro to Physical Computing</li>
-                        <li><i class="fas fa-brain"></i> Problem Solving for Computing</li>
-                        <li><i class="fas fa-square-root-alt"></i> Mathematics for CS</li>
-                        <li><i class="fas fa-lightbulb"></i> Innovation and Society</li>
-                    </ul>
-                </div>
-
             </div>
+
+            <div class="timeline-item scroll-reveal right">
+                <div class="timeline-content glass-card">
+                    <div class="card-header">
+                        <div class="icon-box gradient-2"><i class="fas fa-server"></i></div>
+                        <div>
+                            <h3>Year 2: Specialization</h3>
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                    </div>
+                    <ul class="styled-list">
+                        <li>Systems Security</li>
+                        <li>Server Side Development</li>
+                        <li>Data Analytics</li>
+                        <li>Computer Networking</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-reveal left">
+                <div class="timeline-content glass-card">
+                    <div class="card-header">
+                        <div class="icon-box gradient-3"><i class="fas fa-database"></i></div>
+                        <div>
+                            <h3>Year 1: Foundation</h3>
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                    </div>
+                    <ul class="styled-list">
+                        <li>Intro to Databases</li>
+                        <li>Client Side Development</li>
+                        <li>Physical Computing</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <section id="certifications" class="container">
-        <h2 class="section-title">Certifications & Awards</h2>
-        <div class="education-grid">
+        <h2 class="section-title scroll-reveal">Certifications</h2>
+        <div class="grid-4">
             
-            <div class="edu-card hidden">
-                <div class="edu-header">
-                    <h3>Certificate in Computer Science</h3>
-                    <span class="badge">SLTCA</span>
-                </div>
-                <ul class="module-list">
-                    <li><i class="fas fa-certificate"></i> Completed comprehensive training in CS fundamentals.</li>
-                    <li><i class="fas fa-calendar-alt"></i> Issued: Sep 2022</li>
-                </ul>
-                <a href="cert-cs.pdf" target="_blank" class="project-links" style="display:block; margin-top:10px; font-size:0.9rem;">
-                    <i class="fas fa-file-pdf"></i> View Certificate
-                </a>
+            <div class="glass-card hover-zoom scroll-reveal bottom">
+                <i class="fas fa-certificate card-icon text-blue"></i>
+                <h3>Computer Science</h3>
+                <p class="sm-text">SLTCA (2022)</p>
+                <a href="cert-cs.pdf" target="_blank" class="link-arrow">View Cert <i class="fas fa-arrow-right"></i></a>
             </div>
 
-            <div class="edu-card hidden">
-                <div class="edu-header">
-                    <h3>Fundamentals of Digital Marketing</h3>
-                    <span class="badge">Google</span>
-                </div>
-                <ul class="module-list">
-                    <li><i class="fab fa-google"></i> Certified by Google & IAB Europe.</li>
-                    <li><i class="fas fa-check-circle"></i> Focus on SEO, Analytics & Web Strategy.</li>
-                    <li><i class="fas fa-calendar-alt"></i> Issued: Dec 2022</li>
-                </ul>
-                <a href="cert-google.pdf" target="_blank" class="project-links" style="display:block; margin-top:10px; font-size:0.9rem;">
-                    <i class="fas fa-file-pdf"></i> View Certificate
-                </a>
+            <div class="glass-card hover-zoom scroll-reveal bottom delay-1">
+                <i class="fab fa-google card-icon text-green"></i>
+                <h3>Digital Marketing</h3>
+                <p class="sm-text">Google (2022)</p>
+                <a href="cert-google.pdf" target="_blank" class="link-arrow">View Cert <i class="fas fa-arrow-right"></i></a>
             </div>
 
-            <div class="edu-card hidden">
-                <div class="edu-header">
-                    <h3>Graphic Design Certification</h3>
-                    <span class="badge">SLTCA</span>
-                </div>
-                <ul class="module-list">
-                    <li><i class="fas fa-palette"></i> Professional training in UI design and visual assets.</li>
-                    <li><i class="fas fa-calendar-alt"></i> Issued: 2021</li>
-                </ul>
-                <a href="cert-graphic.pdf" target="_blank" class="project-links" style="display:block; margin-top:10px; font-size:0.9rem;">
-                    <i class="fas fa-file-pdf"></i> View Certificate
-                </a>
+            <div class="glass-card hover-zoom scroll-reveal bottom delay-2">
+                <i class="fas fa-palette card-icon text-purple"></i>
+                <h3>Graphic Design</h3>
+                <p class="sm-text">SLTCA (2021)</p>
+                <a href="cert-graphic.pdf" target="_blank" class="link-arrow">View Cert <i class="fas fa-arrow-right"></i></a>
             </div>
 
-            <div class="edu-card hidden">
-                <div class="edu-header">
-                    <h3>Dean’s List Award</h3>
-                    <span class="badge completed">Academic Excellence</span>
-                </div>
-                <ul class="module-list">
-                    <li><i class="fas fa-star"></i> Awarded for achieving top-tier academic performance.</li>
-                    <li><i class="fas fa-university"></i> Ulster University (2025)</li>
-                </ul>
+            <div class="glass-card hover-zoom scroll-reveal bottom delay-3 special-border">
+                <i class="fas fa-star card-icon text-gold"></i>
+                <h3>Dean’s List</h3>
+                <p class="sm-text">Ulster Uni (2025)</p>
+                <span class="gold-badge">Top 5%</span>
             </div>
 
         </div>
     </section>
 
-    <section id="skills" class="bg-light">
-        <div class="container">
-            <h2 class="section-title">Technical Expertise</h2>
-            <div class="skills-grid">
-                
-                <div class="skill-card hidden">
-                    <i class="fab fa-java"></i>
-                    <h3>Languages</h3>
-                    <p>Java, Python, C++, SQL</p>
-                </div>
-                
-                <div class="skill-card hidden">
-                    <i class="fas fa-cloud"></i>
-                    <h3>Cloud & Security</h3>
-                    <p>Cloud Native Dev, Systems Security, Server Side Dev</p>
-                </div>
-                
-                <div class="skill-card hidden">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Web & Analytics</h3>
-                    <p>HTML5, Tailwind CSS, REST APIs, Data Analytics</p>
-                </div>
-
-                <div class="skill-card hidden">
-                    <i class="fas fa-microchip"></i>
-                    <h3>Hardware & IoT</h3>
-                    <p>Embedded Systems, Physical Computing, Edge Intelligence</p>
-                </div>
-
-                <div class="skill-card hidden">
-                    <i class="fas fa-pencil-ruler"></i>
-                    <h3>Design & Strategy</h3>
-                    <p>UI/UX Design, Photoshop, SEO, Digital Marketing</p>
-                </div>
-
+    <section id="skills" class="container">
+        <h2 class="section-title scroll-reveal">Tech Arsenal</h2>
+        <div class="skills-wrapper">
+            
+            <div class="skill-circle scroll-reveal zoom">
+                <i class="fab fa-java"></i>
+                <span>Java</span>
             </div>
+            <div class="skill-circle scroll-reveal zoom delay-1">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+            </div>
+            <div class="skill-circle scroll-reveal zoom delay-2">
+                <i class="fas fa-cloud"></i>
+                <span>Cloud</span>
+            </div>
+            <div class="skill-circle scroll-reveal zoom delay-3">
+                <i class="fas fa-code"></i>
+                <span>Tailwind</span>
+            </div>
+            <div class="skill-circle scroll-reveal zoom delay-1">
+                <i class="fas fa-microchip"></i>
+                <span>IoT</span>
+            </div>
+            <div class="skill-circle scroll-reveal zoom delay-2">
+                <i class="fas fa-database"></i>
+                <span>SQL</span>
+            </div>
+
         </div>
     </section>
 
     <section id="projects" class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            
-            <div class="project-card hidden">
-                <div class="project-info">
-                    <h3>AetherLens - Visual Engine</h3>
-                    <p class="tech-stack">JavaScript | Tailwind CSS | REST API</p>
-                    <p>A responsive image discovery engine featuring a masonry grid layout. Integrates external APIs to fetch real-time visual data with a custom-built lightbox.</p>
-                    <div class="project-links">
-                        <a href="aether-lens.html" target="_blank" style="color: #dc2626; font-weight: bold; margin-right: 15px;">
-                            <i class="fas fa-play-circle"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/matheeshawishmal/matheeshawishmal.github.io/blob/main/aether-lens.html" target="_blank">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                    </div>
+        <h2 class="section-title scroll-reveal">Featured Work</h2>
+        
+        <div class="project-showcase scroll-reveal">
+            <div class="project-content">
+                <span class="project-tag">Featured Web App</span>
+                <h3>AetherLens Visual Engine</h3>
+                <p>A high-performance image discovery engine built with <strong>Tailwind CSS</strong> and <strong>REST APIs</strong>. Features a custom masonry grid, serverless logic, and a fully responsive lightbox interface.</p>
+                
+                <div class="tech-tags">
+                    <span>JavaScript</span>
+                    <span>Tailwind</span>
+                    <span>API Integration</span>
+                </div>
+
+                <div class="project-actions">
+                    <a href="aether-lens.html" target="_blank" class="btn primary"><i class="fas fa-play"></i> Live Demo</a>
+                    <a href="https://github.com/matheeshawishmal/matheeshawishmal.github.io/blob/main/aether-lens.html" target="_blank" class="btn secondary"><i class="fab fa-github"></i> Source Code</a>
                 </div>
             </div>
-
+            <div class="project-image">
+                <i class="fas fa-layer-group big-icon"></i>
+                <div class="overlay"></div>
+            </div>
         </div>
+
     </section>
 
-    <section id="contact" class="footer hidden">
-        <div class="container">
-            <h2>Let's Connect</h2>
-            <p>Currently open for Summer 2026 Internships in London.</p>
-            <div class="social-links">
-                <a href="mailto:matheesha528@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
-                <a href="https://www.linkedin.com/in/matheesha-wishmal/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <section id="contact" class="footer">
+        <div class="footer-content scroll-reveal">
+            <h2>Let's Build Something Great.</h2>
+            <p>Open for Summer 2026 Internships in London.</p>
+            
+            <div class="social-orbit">
+                <a href="mailto:matheesha528@gmail.com" class="orbit-item"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/matheesha-wishmal/" target="_blank" class="orbit-item"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/" target="_blank" class="orbit-item"><i class="fab fa-github"></i></a>
             </div>
+
             <p class="copyright">
-                &copy; 2026 Matheesha Wishmal Liyanage. <br>
-                <span style="font-size: 0.8rem; color: #94a3b8;">
-                    Designed & Built by me using HTML5, CSS3, and JavaScript.
-                </span>
+                &copy; 2026 Matheesha Wishmal Liyanage.<br>
+                <span class="faint">Designed & Coded with <i class="fas fa-heart"></i> using HTML/CSS/JS</span>
             </p>
         </div>
     </section>
