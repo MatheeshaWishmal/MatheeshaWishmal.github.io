@@ -1,51 +1,35 @@
-// 1. Navigation Scroll Effect
-const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.style.boxShadow = "0 5px 20px rgba(0,0,0,0.1)";
-        navbar.style.background = "rgba(255, 255, 255, 0.95)";
-    } else {
-        navbar.style.boxShadow = "none";
-        navbar.style.background = "rgba(255, 255, 255, 0.8)";
-    }
+const header = document.querySelector('[data-header]');
+const toggle = document.querySelector('[data-nav-toggle]');
+const nav = document.querySelector('[data-nav]');
+
+const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 12);
+updateHeader();
+window.addEventListener('scroll', updateHeader, { passive: true });
+
+toggle.addEventListener('click', () => {
+  const open = toggle.getAttribute('aria-expanded') === 'true';
+  toggle.setAttribute('aria-expanded', String(!open));
+  nav.classList.toggle('open', !open);
 });
 
-// 2. Scroll Reveal Animation
-const observerOptions = {
-    threshold: 0.15, // Trigger when 15% of the element is visible
-    rootMargin: "0px 0px -50px 0px"
-};
+nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+  toggle.setAttribute('aria-expanded', 'false');
+  nav.classList.remove('open');
+}));
 
-const observer = new IntersectionObserver((entries) => {
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (reduceMotion || !('IntersectionObserver' in window)) {
+  document.querySelectorAll('.reveal').forEach((element) => element.classList.add('visible'));
+} else {
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target); // Only animate once
-        }
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
     });
-}, observerOptions);
-
-document.querySelectorAll('.scroll-reveal').forEach((el) => {
-    observer.observe(el);
-});
-
-// 3. Typing Effect for Name (Simple & Robust)
-const text = "Matheesha Wishmal";
-const heading = document.querySelector('.typing-text');
-let i = 0;
-
-// Clear text initially to start typing animation
-heading.innerHTML = "";
-
-function typeWriter() {
-    if (i < text.length) {
-        heading.innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typeWriter, 100); // Speed of typing
-    }
+  }, { threshold: 0.12, rootMargin: '0px 0px -50px' });
+  document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 }
 
-// Start typing after a short delay
-setTimeout(typeWriter, 500);
-
-console.log("Animations Loaded 🚀");
+document.querySelector('[data-year]').textContent = new Date().getFullYear();
